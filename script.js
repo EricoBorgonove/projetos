@@ -1,0 +1,11 @@
+document.getElementById("titulo").innerHTML="tudo bem!";
+document.write("qualquer coisa");
+//window.alert("ola");
+//document.getElementsByClassName("lista");
+//document.getElementsByClassName('lista')[0].innerHTML="outra coisa";
+document.getElementsByTagName('button')[1].innerHTML="nome1";
+document.getElementsByClassName('name')[0].innerHTML="nome";
+//document.getElementsByName('email');
+document.querySelector('#titulo').innerHTML="zona";
+//document.querySelectorAll('.lista').innerHTML="2";
+document.getElementsByTagName('.name')[1].innerHTML="1";
