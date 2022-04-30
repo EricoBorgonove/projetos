@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+
+<body>
+
+    <style>
+        .colorEdit {
+            color: red;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script>
+
+    // $(document).ready(function(){
+    //    alert("jqery funcionou");
+    // });
+    </script> -->
+    <button id="exibirAlerta">Clique aqui para exibir o alerta</button>
+    <button id="sumirParagrafo">clique para sumir com o paragrafo</button>
+    <button id="aparecerParagrafo">clique para aparecer com o paragrafo</button>
+    <p id="paragrafo"> vai sumir esse paragrafo</p>
+    <script>
+        $(document).ready(function () {
+        $("#aparecerParagrafo").hide();
+        $("#exibirAlerta").click(function () {
+            alert("voce clicou no botao exibir alerta");
+            $("#exibirAlerta").addClass("colorEdit");
+        });
+        $("#sumirParagrafo").click(function () {
+            $("#paragrafo").hide();
+            $("#aparecerParagrafo").show();
+            $("#sumirParagrafo").hide();
+        });
+        $("#aparecerParagrafo").click(function () {
+            $("#paragrafo").show();
+            $("#aparecerParagrafo").hide();
+            $("#sumirParagrafo").show();
+        });
+        });
+    </script>
+    <!-- <script>
+        $(document).ready(function () {
+            $("#aparecerParagrafo").hide();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#exibirAlerta").click(function () {
+                alert("voce clicou no botao exibir alerta");
+                $("#exibirAlerta").addClass("colorEdit");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#sumirParagrafo").click(function () {
+                $("#paragrafo").hide();
+                $("#aparecerParagrafo").show();
+                $("#sumirParagrafo").hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#aparecerParagrafo").click(function () {
+                $("#paragrafo").show();
+                $("#aparecerParagrafo").hide();
+                $("#sumirParagrafo").show();
+            });
+        });
+    </script> -->
+
+
+</body>
+
+</html>
